@@ -12,11 +12,11 @@ app.use("/api/comments", checkAuth, commentRoutes);
 try {
   db.authenticate();
   db.sync();
-  console.log("Connection has been established successfully.");
+  console.log("La conexión a la base de datos se ha realizado con éxito.");
 } catch (error) {
-  console.error("Unable to connect to the database:", error);
+  console.error("No se ha podido conectar a la base de datos:", error);
 }
 
 app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+  console.log("Servidor corriendo en el puerto 3000");
 });

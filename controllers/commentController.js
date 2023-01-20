@@ -23,7 +23,7 @@ export const updateComment = async (req, res) => {
       id: req.params.id,
     },
   });
-  res.json(comment);
+  res.json(`Comentario actualizado: ${comment}`);
 };
 
 export const deleteComment = async (req, res) => {
@@ -32,5 +32,5 @@ export const deleteComment = async (req, res) => {
       id: req.params.id,
     },
   });
-  res.json(comment);
+  res.json("Comentario eliminado");
 };

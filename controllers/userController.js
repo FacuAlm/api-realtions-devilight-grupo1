@@ -23,7 +23,7 @@ export const updateUser = async (req, res) => {
       id: req.params.id,
     },
   });
-  res.json(user);
+  res.json(`Usuario actualizado: ${user}`);
 };
 
 export const deleteUser = async (req, res) => {
@@ -32,5 +32,5 @@ export const deleteUser = async (req, res) => {
       id: req.params.id,
     },
   });
-  res.json("User deleted");
+  res.json("Usuario eliminado");
 };
